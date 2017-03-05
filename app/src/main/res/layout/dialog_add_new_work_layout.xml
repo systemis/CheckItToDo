@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fade_backgroundcolor"
+    android:paddingBottom="@dimen/PM_View_Dialog_Add_Work"
+    >
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minHeight="@dimen/MinHeight_Form_IP_WorkName"
+               android:background="#fff"
+               >
+
+
+
+               <CheckBox
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginRight="5dp"
+                   android:id="@+id/Check_Complete"
+                   />
+
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/TextSize_IP_WorkName"
+                   android:layout_toRightOf="@id/Check_Complete"
+                   android:id="@+id/Import_Work_Name"
+                   />
+
+           </RelativeLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="#fff"
+               android:layout_marginTop="@dimen/MarginTop_Form_RemindTime"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:src="@mipmap/alarm_clock_icon"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="Remind me At: "
+                   android:gravity="center_vertical"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:id="@+id/Show_Time_Remind"
+                   android:minWidth="120dp"
+                   android:text="Click to choose"
+                   />
+
+               <ImageView
+                   android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   android:src="@mipmap/delete_icon"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/Btn_Remove_Work_TimeRemind"
+                   />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="#fff"
+               android:layout_marginTop="2dp"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:src="@mipmap/locate_icon"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   />
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="Remind me At: "
+                   android:gravity="center_vertical"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:id="@+id/Show_Location_Remind"
+                   android:minWidth="120dp"
+                   />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="#fff"
+               android:layout_marginTop="2dp"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:src="@mipmap/priority_icon"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   />
+
+
+               <!--<RatingBar-->
+               <!--android:id="@+id/RantingBar_Work"-->
+               <!--style="?android:attr/ratingBarStyleSmall"-->
+               <!--android:layout_width="wrap_content"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:numStars="5"-->
+               <!--android:stepSize="2.1"-->
+               <!--android:layout_gravity="center"-->
+
+               <!--/>-->
+
+
+               <Spinner
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/Ranting_This_Work"
+                   android:layout_marginLeft="@dimen/PM_View_Dialog_Add_Work"
+                   >
+
+
+               </Spinner>
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="#fff"
+               android:layout_marginTop="2dp"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:src="@android:drawable/presence_video_away"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   />
+
+
+               <Spinner
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/SPN_Select_Work_Type"
+                   android:layout_marginLeft="@dimen/PM_View_Dialog_Add_Work"
+                   >
+
+
+               </Spinner>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="#fff"
+               android:layout_marginTop="2dp"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:src="@android:drawable/ic_lock_idle_alarm"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   />
+
+
+               <Spinner
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/SPN_Select_Work_Sound_Alarm"
+                   android:layout_marginLeft="@dimen/PM_View_Dialog_Add_Work"
+                   >
+
+
+               </Spinner>
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="#fff"
+               android:layout_marginTop="20dp"
+               >
+
+               <EditText
+                   android:hint="Ghi chú :"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:minHeight="@dimen/MinHeight_Form_IP_WorkNote"
+                   android:layout_marginTop="@dimen/PM_View_Dialog_Add_Work"
+                   android:gravity="top"
+                   android:id="@+id/Import_Work_Note"
+                   />
+
+           </LinearLayout>
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/PM_View_Dialog_Add_Work"
+               android:background="#fff"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/Default_Size_ImagView_Button"
+                   android:layout_height="@dimen/Default_Size_ImagView_Button"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   android:src="@mipmap/dont_icon"
+                   android:id="@+id/Btn_Done_Dialog_Add_Work"
+                   />
+
+               <ImageView
+                   android:layout_width="@dimen/Default_Size_ImagView_Button"
+                   android:layout_height="@dimen/Default_Size_ImagView_Button"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   android:src="@mipmap/delete_icon"
+                   android:layout_marginRight="35dp"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/Btn_Delete_This_Work"
+                   />
+
+
+               <ImageView
+                   android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                   android:padding="@dimen/PM_View_Dialog_Add_Work"
+                   android:src="@mipmap/exit_icon"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/Btn_Exit_Dialog_This_Work"
+                   />
+
+           </RelativeLayout>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+
+</LinearLayout>

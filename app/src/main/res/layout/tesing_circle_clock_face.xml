@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/SizeCircleClockFUsually"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/SizeCircleClockFUsually"
+    android:background="@drawable/custom_circle_border"
+
+    android:id="@+id/Circle_Clock_Face"
+
+    android:layout_centerHorizontal="true"
+
+    >
+
+
+    <TextView
+        android:layout_width="@dimen/width_show_work_name_usually"
+        android:layout_marginTop="@dimen/margin_top_show_work_name_usually"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Code Program..."
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/Show_Work_Name_Usually"
+        />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/marginLeftLLComprise_Time_Work_Usually"
+        android:layout_marginRight="@dimen/marginLeftLLComprise_Time_Work_Usually"
+        android:layout_marginTop="@dimen/marginLeftLLComprise_Time_Work_Usually"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09"
+            android:textSize="45dp"
+            android:id="@+id/Show_Work_Hour"
+            android:textColor="#000"
+            android:fontFamily="casual"
+
+            />
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_LL_Divide_Time_Work_Usually"
+            android:layout_marginRight="@dimen/margin_LL_Divide_Time_Work_Usually"
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            ></LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45"
+            android:textColor="#000"
+            android:textSize="45dp"
+            android:fontFamily="casual"
+            android:id="@+id/Show_Work_Minute"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/width_show_work_time_week_usually"
+        android:layout_marginTop="@dimen/marginTop_show_work_time_week_usually"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/Show_Work_Time_Week"
+
+        />
+
+
+</LinearLayout>

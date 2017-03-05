@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal"
+
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/size_button_next_previous_day_S"
+
+    android:id="@+id/TimePicker_Form"
+
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="2dp"
+    >
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/size_button_next_previous_day_S"
+        android:layout_height="@dimen/size_button_next_previous_day_S"
+        android:src="@mipmap/previous_icon"
+        android:scaleType="centerCrop"
+        android:id="@+id/Btn_PreviousDay"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#cacaca"
+        >
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_button_next_previous_day_S"
+
+            android:minWidth="@dimen/size_button_next_previous_day_S"
+            android:id="@+id/SPN_Select_Day"
+
+            >
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:textSize="@dimen/TextSize_Tdot"
+            android:layout_marginLeft="2dp"
+            />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_button_next_previous_day_S"
+
+            android:minWidth="@dimen/size_button_next_previous_day_S"
+            android:id="@+id/SPN_Select_Month"
+
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="@dimen/TextSize_Tdot"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_button_next_previous_day_S"
+
+            android:minWidth="@dimen/size_button_next_previous_day_S"
+
+            android:id="@+id/SPN_Select_Year"
+            ></Spinner>
+
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/size_button_next_previous_day_S"
+        android:layout_height="@dimen/size_button_next_previous_day_S"
+        android:src="@mipmap/next_icon"
+        android:id="@+id/Btn_NextDay"
+        android:scaleType="centerCrop"
+        />
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/Layout_Main_Work_Usually_Dialog"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/PM_View_Dialog_Add_Work"
+                >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Tên công việc: "
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/PM_View_Dialog_Add_Work"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/ImportuUsuallyWorkNameDialog"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/PM_View_Dialog_Add_Work"
+                >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Thời gian xảy ra: "
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SPN_Select_Hour_UsuallyWork"
+                        android:padding="@dimen/P_SP_View_Dialog_Add_Work"
+
+                        >
+
+                    </Spinner>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/TextSize_Tdot"
+                        android:text=" : "
+                        android:layout_gravity="center"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SPN_select_Minute_UsuallyWork"
+                        android:padding="@dimen/P_SP_View_Dialog_Add_Work"
+                        >
+
+
+                    </Spinner>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhắc vào các ngày :"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/Manager_CheckBox_CurrentWeek"
+                    >
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                    android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                    android:src="@android:drawable/ic_lock_idle_alarm"
+                    android:padding="@dimen/PM_View_Dialog_Add_Work"
+                    />
+
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/SPN_Select_Work_Sound_Alarm_UsuallyWorkDialog"
+                    android:layout_marginLeft="@dimen/PM_View_Dialog_Add_Work"
+                    >
+
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/Default_Size_ImagView_Button"
+                    android:layout_height="@dimen/Default_Size_ImagView_Button"
+                    android:padding="10dp"
+                    android:src="@mipmap/dont_icon"
+                    android:id="@+id/Btn_Done_Dialog_UsuallyWork"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/Default_Size_ImagView_Button"
+                    android:layout_height="@dimen/Default_Size_ImagView_Button"
+                    android:padding="10dp"
+                    android:src="@mipmap/delete_icon"
+                    android:layout_marginRight="35dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/Btn_Delete_Dialog_UsuallyWork"
+                    />
+
+
+                <ImageView
+                    android:layout_width="@dimen/Default_Size_ImagView_Button"
+                    android:layout_height="@dimen/Default_Size_ImagView_Button"
+                    android:padding="10dp"
+                    android:src="@mipmap/exit_icon"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/Btn_Exit_Dialog_UsuallWork"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

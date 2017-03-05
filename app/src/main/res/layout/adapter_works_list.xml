@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+
+    android:clickable="false"
+
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+       <RelativeLayout
+           android:layout_width="10dp"
+           android:layout_height="match_parent"
+           android:id="@+id/Show_Priority_Work_ListView_Adapter"
+           android:background="@drawable/custom_background_form_show_priority_adapter"
+           >
+
+
+       </RelativeLayout>
+
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Show_Work_Complte_ListView_Adapter"
+                    android:layout_gravity="center"
+
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="2dp"
+
+                    android:textColor="#000"
+                    android:id="@+id/Show_Work_Name_ListView_Adapter"
+
+                    android:focusable="false"
+                    android:clickable="false"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/Show_Work_Time_ListView_Adapter"
+
+                        android:layout_centerVertical="true"
+
+                        android:focusable="false"
+                        android:clickable="false"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+   </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">"Check It To Do "</string>
+    <string name="Remind_User_Time">Click to choose</string>
+    <string name="Title_Notifi_NoHaveWorkDay">Hôm nay bạn không có công việc nào cả !</string>
+    <string name="DefaultFolderNameFamily">Gia đình</string>
+    <string name="DefaultFolderNameWorks">Công việc</string>
+    <string name="Title_Work_Priority">Mức độ :</string>
+    <string name="TitleAddNewWork">Thêm công việc</string>
+    <string name="TitleRemoveAllWork">Xoá tất cả công việc</string>
+    <string name="RemindNotWorkName">Bạn chưa đặt tên cho công việc !</string>
+    <string name="Monday">Thứ hai</string>
+    <string name="TuesDay">Thứ ba</string>
+    <string name="WebnesDay">Thứ tư</string>
+    <string name="ThursDay">Thứ năm</string>
+    <string name="FriDay">Thứ sáu</string>
+    <string name="Saturday">Thứ bảy</string>
+    <string name="Sunday">Chủ nhật</string>
+    <string name="notes_title">Ghi chú</string>
+    <string name="settings_title">Cài đặt</string>
+    <string name="usually_title">Thường Xuyên</string>
+    <string name="home_title">Trang chủ</string>
+    <string name="logout_title">Thoát</string>
+    <string name="other_folder_title">Khác</string>
+</resources>

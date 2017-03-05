@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fade_backgroundcolor"
+    android:id="@+id/Layout_Main_Dialog_AP_WorkType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Work Type Manager"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center"
+
+            />
+
+        <ImageView
+            android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+            android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+            android:padding="10dp"
+            android:src="@mipmap/delete_icon"
+            android:id="@+id/Btn_Remove_Work_Type_AU"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Type Name: "
+            android:layout_marginTop="5dp"
+            android:id="@+id/Import_Type_Name_dialog"
+            android:background="#fff"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:id="@+id/Btn_Add_Type_AU_Dialog"
+            android:text="Add"
+            android:background="#fff"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:id="@+id/Btn_Exit_AU_Dialog"
+            android:layout_marginLeft="5dp"
+            android:text="Exit"
+            android:background="#fff"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

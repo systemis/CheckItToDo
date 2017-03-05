@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout_Main_All_Notes_Fragment"
+        android:padding="20dp"
+        >
+
+    </RelativeLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="#6fda36"
+        fab:menu_colorPressed="#ffcc65"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@android:drawable/ic_menu_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label="Quản lý"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/Flt_Remove_Work_All_Notes_Frgament"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_delete"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="#36a1da"
+            fab:menu_colorPressed="#ffcc65"
+            fab:fab_label="@string/TitleRemoveAllWork"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/Flt_Add_New_Work_All_Notes_Frgament"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_add_black_24dp"
+            fab:fab_size="mini"
+            fab:menu_colorNormal="#36a1da"
+            fab:fab_label="@string/TitleAddNewWork"
+            />
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fade_backgroundcolor"
+    android:id="@+id/Layout_Main_Dialog_AD_Account"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Account Manager"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+            android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+            android:padding="10dp"
+            android:src="@mipmap/delete_icon"
+            android:id="@+id/Btn_Remove_Account_Selected_AD"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Name:"
+            android:background="#fff"
+            android:padding="10dp"
+            android:id="@+id/Import_Account_Name_AD"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account PassWord:"
+            android:background="#fff"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/Import_Account_Pass_AD"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Account PassWord:"
+            android:background="#fff"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/Import_New_Account_Pass_AD"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="#fff"
+            android:id="@+id/Btn_AP_ADD_ialog"
+            android:text="Sign Up"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="#fff"
+            android:id="@+id/Btn_Exit_AD_Dialog"
+            android:layout_marginLeft="5dp"
+            android:text="Exit"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

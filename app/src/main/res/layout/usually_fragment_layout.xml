@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Show_Data_Usually"
+
+    >
+
+<!--</RelativeLayout>-->
+
+<!--<RelativeLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@id/Show_Data_Usually_Manager"-->
+    <!--&gt;-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:id="@+id/TitleUsuallyWork"
+        android:text="Các công việc xảy ra thường xuyên"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:fontFamily="serif"
+        android:id="@+id/Show_ViewFlipper_Current_Posision"
+        android:layout_below="@id/TitleUsuallyWork"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Show_Data_Usually_Manager"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/next_icon"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/Btn_Previous_Work_Usually_Screen"
+            />
+
+        <ViewFlipper
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/VF_Content_Clocks"
+            android:layout_centerInParent="true"
+            >
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/Layout_Main_Usually_Fragment"-->
+            <!--&gt;-->
+
+            <!--<include layout="@layout/tesing_circle_clock_face"/>-->
+
+
+            <!--</RelativeLayout>-->
+
+        </ViewFlipper>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/previous_icon"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/Btn_Next_Work_Usually_Screen"
+            />
+
+
+        <ImageView
+            android:layout_below="@id/VF_Content_Clocks"
+            android:layout_width="@dimen/Default_Size_ImagView_Button"
+            android:layout_height="@dimen/Default_Size_ImagView_Button"
+            android:padding="5dp"
+            android:id="@+id/IMV_Edit_Usually_Work"
+            android:layout_marginLeft="20dp"
+            android:src="@android:drawable/ic_menu_edit"
+            />
+
+        <ImageView
+            android:layout_below="@id/VF_Content_Clocks"
+            android:layout_width="@dimen/Default_Size_ImagView_Button"
+            android:layout_height="@dimen/Default_Size_ImagView_Button"
+            android:padding="5dp"
+            android:id="@+id/IMV_Delete_Usually_Work"
+            android:src="@mipmap/delete_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            fab:menu_fab_size="normal"
+            fab:menu_showShadow="true"
+            fab:menu_shadowColor="#66000000"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="3dp"
+            fab:menu_colorNormal="#6fda36"
+            fab:menu_colorPressed="#ffcc65"
+            fab:menu_colorRipple="#99FFFFFF"
+            fab:menu_animationDelayPerItem="50"
+            fab:menu_icon="@android:drawable/ic_menu_add"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_paddingTop="4dp"
+            fab:menu_labels_paddingRight="8dp"
+            fab:menu_labels_paddingBottom="4dp"
+            fab:menu_labels_paddingLeft="8dp"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_textColor="#FFFFFF"
+            fab:menu_labels_textSize="14sp"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_colorNormal="#333333"
+            fab:menu_labels_colorPressed="#444444"
+            fab:menu_labels_colorRipple="#66FFFFFF"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_position="left"
+            fab:menu_openDirection="up"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_fab_label="Quản lý"
+            android:layout_margin="30dp"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_delete"
+                fab:fab_size="mini"
+                fab:menu_colorNormal="#36a1da"
+                fab:menu_colorPressed="#ffcc65"
+                fab:fab_label="Xoá tất cả những hành động thường xuyên"
+                android:id="@+id/Flt_Remove_Work_All_Usually_Work"
+
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/Flt_Add_New_Usually_Work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_add_black_24dp"
+                fab:fab_size="mini"
+                fab:menu_colorNormal="#36a1da"
+                fab:fab_label="Thêm một hành động thường xuyênn"
+                />
+
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+
+    <!--<include layout="@layout/tesing_circle_clock_face"/>-->
+
+</RelativeLayout>

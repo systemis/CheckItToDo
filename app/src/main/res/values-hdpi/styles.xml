@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    
+    
+    <style name="Theme_Button_Login_SignUp">
+
+        <item name="android:layout_width">123dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">0.04</item>
+        <item name="android:layout_marginTop">20dp</item>
+
+    </style>
+
+
+    <style name="Theme_EditText_Import_UserName_PassWord">
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+
+    </style>
+
+
+    <style name="Theme_Item_Toolbar_MainScreen">
+
+
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+
+        <item name="android:scaleType">centerCrop</item>
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">5dp</item>
+
+    </style>
+
+
+
+    <style name="Theme_Text_Item_Toolbar_MainScreen">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#fff</item>
+
+        <item name="android:textSize">12dp</item>
+
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar" >
+        <item name="android:numStars">5</item>
+        <item name="android:rating">4.5</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">44dip</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:layout_marginTop">4dip</item>
+    </style>
+
+    <!--android:text="Login"-->
+    <!--android:layout_width="123dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:id="@+id/button_login"-->
+    <!--android:layout_weight="0.04"-->
+
+
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="text"-->
+    <!--android:textColor="#000"-->
+    <!--android:id="@+id/Import_UserName_View"-->
+
+</resources>
+

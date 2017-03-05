@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_setting"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <!-- Account Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                        android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/ic_add_black_24dp"
+                        android:id="@+id/Btn_add_New_Account"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp"
+                    android:id="@+id/Show_Account_Data"
+                    >
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Work Type Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Work Type: "
+                        android:layout_centerVertical="true"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/Size_ImagView_Dialog_Add_Work"
+                        android:layout_height="@dimen/Size_ImagView_Dialog_Add_Work"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/ic_add_black_24dp"
+                        android:id="@+id/Btn_Add_New_Work_Type"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp"
+                    android:minHeight="100dp"
+                    android:id="@+id/Show_Work_Type_Data"
+                    ></LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Work Type Item -->
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alarm Sound: "
+                        android:layout_centerVertical="true"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/Show_Alarm_Sound_Data"
+                        ></Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout> -->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

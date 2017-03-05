@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- For Usually Screen -->
+    <dimen name="SizeCircleClockFUsually">250dp</dimen>
+    <dimen name="width_show_work_name_usually">150dp</dimen>
+    <dimen name="margin_top_show_work_name_usually">30dp</dimen>
+    <dimen name="marginLeftLLComprise_Time_Work_Usually">40dp</dimen>
+    <dimen name="margin_LL_Divide_Time_Work_Usually">10dp</dimen>
+    <dimen name="width_show_work_time_week_usually">230dp</dimen>
+    <dimen name="marginTop_show_work_time_week_usually">20dp</dimen>
+    <dimen name="Default_Size_ImagView_Button">40dp</dimen>
+    <dimen name="size_button_next_previous_day_S">40dp</dimen>
+    <dimen name="TextSizeTimePickerSP">18dp</dimen>
+    <dimen name="TextSize_Tdot">20dp</dimen>
+    <dimen name="Width_ToolBar_MainActivity">120dp</dimen>
+
+    <dimen name="TextSize_Center_Remind_ANY">5dp</dimen>
+
+    <dimen name="MinHeight_Form_IP_WorkName">50dp</dimen>
+    <dimen name="TextSize_IP_WorkName">20dp</dimen>
+    <dimen name="MarginTop_Form_RemindTime">15dp</dimen>
+    <dimen name="Size_ImagView_Dialog_Add_Work">40dp</dimen>
+    <dimen name="PM_View_Dialog_Add_Work">10dp</dimen>
+    <dimen name="MinHeight_Form_IP_WorkNote">150dp</dimen>
+
+
+    <dimen name="P_SP_View_Dialog_Add_Work">5dp</dimen>
+
+</resources>

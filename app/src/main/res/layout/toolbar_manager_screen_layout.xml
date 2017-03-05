@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:layout_centerVertical="true"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:id="@+id/Toolbar_Main_Screen"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            style="@style/Theme_Item_Toolbar_MainScreen"
+            android:src="@mipmap/event_checked_icon"
+            android:onClick="Btn_Home_onclick"
+            android:id="@+id/Btn_Home"
+            />
+
+        <TextView
+            style="@style/Theme_Text_Item_Toolbar_MainScreen"
+            android:text="@string/home_title"
+            android:textColor="@color/GreenColor"
+            android:id="@+id/TV_Home"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            style="@style/Theme_Item_Toolbar_MainScreen"
+            android:src="@mipmap/usually_icon"
+            android:onClick="Btn_Usually_onclick"
+            android:id="@+id/Btn_Usually"
+            />
+
+        <TextView
+            style="@style/Theme_Text_Item_Toolbar_MainScreen"
+            android:text="@string/usually_title"
+            android:id="@+id/TV_Usually"
+            android:textSize="12dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            style="@style/Theme_Item_Toolbar_MainScreen"
+            android:src="@mipmap/notepad_icon"
+            android:onClick="Btn_Notes_onclick"
+            android:id="@+id/Btn_Notes"
+            />
+
+        <TextView
+            style="@style/Theme_Text_Item_Toolbar_MainScreen"
+            android:text="@string/notes_title"
+            android:id="@+id/TV_Notes"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            style="@style/Theme_Item_Toolbar_MainScreen"
+            android:src="@mipmap/settings_icon"
+            android:onClick="Btn_Settings_onclick"
+            android:id="@+id/Btn_Settings"
+            />
+
+        <TextView
+            style="@style/Theme_Text_Item_Toolbar_MainScreen"
+            android:text="@string/settings_title"
+            android:id="@+id/TV_Settings"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            style="@style/Theme_Item_Toolbar_MainScreen"
+            android:src="@mipmap/logout_icon"
+            android:onClick="Btn_LogOut_onclick"
+            android:id="@+id/Btn_LogOut"
+            />
+
+        <TextView
+            style="@style/Theme_Text_Item_Toolbar_MainScreen"
+            android:text="@string/logout_title"
+            android:id="@+id/TV_LogOut"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
